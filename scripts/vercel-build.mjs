@@ -94,6 +94,20 @@ export default async function handler(req, res) {
 
 writeFileSync(join(funcDir, "index.mjs"), adapterCode);
 
+
+// Write package.json with type module so Node.js treats .js files in the serverless function as ES Modules
+writeFileSync(
+  join(funcDir, "package.json"),
+  JSON.stringify(
+    {
+      type: "module",
+    },
+    null,
+    2,
+  ),
+);
+
+
 // Write the .vc-config.json for a Node.js serverless function
 writeFileSync(
   join(funcDir, ".vc-config.json"),
