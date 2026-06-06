@@ -141,42 +141,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-primary py-8 shadow-inner relative z-30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="flex flex-col items-center justify-center p-4">
-              <span className="text-4xl mb-2">🏫</span>
-              <span className="text-3xl font-bold text-secondary mb-1">
-                <AnimatedCounter end={1200} suffix="+" />
-              </span>
-              <span className="text-sm font-semibold text-secondary/80 uppercase tracking-wider">Schools Improved</span>
-            </div>
-            <div className="flex flex-col items-center justify-center p-4">
-              <span className="text-4xl mb-2">🏥</span>
-              <span className="text-3xl font-bold text-secondary mb-1">
-                <AnimatedCounter end={850} suffix="+" />
-              </span>
-              <span className="text-sm font-semibold text-secondary/80 uppercase tracking-wider">Health Camps</span>
-            </div>
-            <div className="flex flex-col items-center justify-center p-4">
-              <span className="text-4xl mb-2">📋</span>
-              <span className="text-3xl font-bold text-secondary mb-1">
-                <AnimatedCounter end={50} suffix="k+" />
-              </span>
-              <span className="text-sm font-semibold text-secondary/80 uppercase tracking-wider">Complaints Resolved</span>
-            </div>
-            <div className="flex flex-col items-center justify-center p-4">
-              <span className="text-4xl mb-2">👥</span>
-              <span className="text-3xl font-bold text-secondary mb-1">
-                <AnimatedCounter end={2} suffix="M+" />
-              </span>
-              <span className="text-sm font-semibold text-secondary/80 uppercase tracking-wider">Members</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
       <section id="about" className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
