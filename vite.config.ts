@@ -14,6 +14,9 @@ export default defineConfig({
     server: { entry: "server" },
   },
   vite: {
+    ssr: {
+      noExternal: true,
+    },
     server: {
       allowedHosts: true,
     },
